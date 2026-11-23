@@ -35,6 +35,7 @@ export const LEARNING_PATHS: LearningPath[] = [
         description: 'Pahami teori sampling Nyquist-Shannon, konvolusi 2D, dekomposisi spektrum frekuensi dengan Discrete Fourier Transform (2D FFT), dan filtering tepi.',
         targetChapters: 'Bab C01, C05, C10, C20',
         availabilityStatus: 'Tersedia Lokal',
+        directLink: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         recommendedFocus: [
           'Bab C05: Teorema Sampling & Anti-Aliasing Filter',
           'Bab C10: Discrete Fourier Transform & Algoritma 2D FFT',
@@ -93,6 +94,7 @@ export const LEARNING_PATHS: LearningPath[] = [
         description: 'Kuasai konversi analog-ke-digital (ADC), kuantisasi, reduksi derau termal dengan filter FIR digital, dan estimasi spektral sinyal fisik.',
         targetChapters: 'Bab C01–C05, C15–C18',
         availabilityStatus: 'Tersedia Lokal',
+        directLink: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         recommendedFocus: [
           'Bab C01: Siklus Akuisisi Sinyal: Transduser, Pengondisi, ADC',
           'Bab C15: Perancangan Filter Digital FIR untuk Sensor Fisik'
@@ -163,6 +165,7 @@ export const LEARNING_PATHS: LearningPath[] = [
         description: 'Terapkan koreksi atmosferik BOA, ekstraksi indeks biofisik (NDVI/EVI/NDWI), serta analisis polarimetri radar gelombang mikro Synthetic Aperture Radar (SAR).',
         targetChapters: 'Level 1–3 (Bab 01–21)',
         availabilityStatus: 'Tersedia Lokal',
+        directLink: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
         recommendedFocus: [
           'Bab 01–05: Rantai Transmisi Informasi & Sensor Optik Satelit',
           'Bab 09–14: Koreksi Radiometrik & Analisis Indeks Spektral',
@@ -209,6 +212,7 @@ export const LEARNING_PATHS: LearningPath[] = [
         description: 'Analisis sifat linear time-invariant (LTI), respon impuls, stabilitas sistem di bidang Z, dan representasi pole-zero.',
         targetChapters: 'Pilar 1 (Bab C01–C10)',
         availabilityStatus: 'Tersedia Lokal',
+        directLink: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         recommendedFocus: [
           'Bab C01–C04: Sinyal Waktu-Diskret & Konvolusi Matematis',
           'Bab C06–C09: Analisis Sistem LTI & Transformasi Z'
@@ -220,6 +224,7 @@ export const LEARNING_PATHS: LearningPath[] = [
         description: 'Rancang filter digital FIR fase-linier dan filter IIR eliptik/Butterworth menggunakan transformasi bilinear serta optimasi windowing.',
         targetChapters: 'Pilar 2 & 3 (Bab C11–C25)',
         availabilityStatus: 'Tersedia Lokal',
+        directLink: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         recommendedFocus: [
           'Bab C10–C14: Algoritma Radix-2 FFT & Spektrogram Waktu-Frekuensi',
           'Bab C15–C19: Desain Filter FIR/IIR Standar Industri'
@@ -240,7 +245,8 @@ export const LEARNING_PATHS: LearningPath[] = [
         stageName: 'Tahap 1: Epistemologi Riset & Identifikasi Research Gap',
         description: 'Pelajari perbedaan sains vs rekayasa, metode induktif/deduktif, pemetaan literatur ilmiah sistematis (SLR), dan formulasi novelty.',
         targetChapters: 'Pilar 1 (Bab 01–10)',
-        availabilityStatus: 'Tersedia Lokal',
+        availabilityStatus: 'Tersedia Daring',
+        directLink: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
         recommendedFocus: [
           'Bab 01–03: Metode Ilmiah & Taksonomi Kontribusi Riset',
           'Bab 07–10: Systematic Literature Review & State-of-the-Art Mapping'
@@ -251,7 +257,8 @@ export const LEARNING_PATHS: LearningPath[] = [
         stageName: 'Tahap 2: Desain Eksperimen Kuantitatif & Validasi Empiris',
         description: 'Rancang eksperimen terkontrol, randomisasi sampel, mitigasi bias, dan pengujian statistika inferensial (ANOVA, t-test, regresi linier multivariat).',
         targetChapters: 'Pilar 2 & 3 (Bab 11–30)',
-        availabilityStatus: 'Tersedia Lokal',
+        availabilityStatus: 'Tersedia Daring',
+        directLink: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
         recommendedFocus: [
           'Bab 12–15: Kontrol Variabel, Validitas Internal & Eksternal',
           'Bab 21–25: Uji Signifikansi Statistik, Nilai-p & Effect Size'
@@ -274,7 +281,8 @@ export const LEARNING_PATHS: LearningPath[] = [
         stageName: 'Tahap 4: Penulisan Manuskrip Jurnal Q1 & Peer-Review Strategy',
         description: 'Susun manuskrip berstruktur IMRaD berstandar IEEE/Elsevier, tulis rebuttal letter tangguh untuk reviewer, dan siapkan proposal riset doktoral.',
         targetChapters: 'Pilar 4 & 5 (Bab 31–51)',
-        availabilityStatus: 'Tersedia Lokal',
+        availabilityStatus: 'Tersedia Daring',
+        directLink: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
         recommendedFocus: [
           'Bab 31–36: Penulisan Title, Abstract, Results & Discussion Jurnal Q1',
           'Bab 41–46: Navigasi Peer-Review, Respon Reviewer & Proposal Doktoral'

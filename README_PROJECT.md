@@ -1,15 +1,15 @@
 # Engineering Learning Ecosystem — Project Continuation Reference
 **Portal Utama Ekosistem Pembelajaran Terbuka — Institut Teknologi Sumatera (ITERA)**  
 *Dokumen Rujukan Utama untuk Sesi AI & Pengembang*  
-*Terakhir Diperbarui: 23 November 2026 (Fase RELEASE-01 — RELEASED & VERIFIED v1.0.0)*
+*Terakhir Diperbarui: 23 November 2026 (Fase RELEASE-02 — RELEASED & VERIFIED v1.0.1)*
 
 ---
 
-## 📌 1. Identitas & Status Rilis Produksi (v1.0.0)
+## 📌 1. Identitas & Status Rilis Produksi (v1.0.1)
 
 - **Nama Publik Portal:** **Engineering Learning Ecosystem**
-- **Versi Rilis:** `v1.0.0`
-- **Status Rilis:** **RELEASED & VERIFIED** (Publikasi GitHub Pages Aktif & Terverifikasi Nyata)
+- **Versi Rilis:** `v1.0.1`
+- **Status Rilis:** **RELEASED & VERIFIED** (Sinkronisasi Tautan Publik & Status Deployment 7 Hub)
 - **Nama Folder Lokal:** `Learning-Hub-Dashboard` (dipertahankan di `D:\Workstation\Repo My Corses\Learning-Hub-Dashboard`)
 - **Institusi Resmi:** Program Studi S1 Teknik Telekomunikasi, Institut Teknologi Sumatera (ITERA)
 - **Payung Riset:** Intelligent Sensing, Vision and Wireless Systems (ISVWS) 2026–2040
@@ -17,32 +17,26 @@
 - **Inisiator & Pengembang:** Aji Pamungkas Tri Nurcahyo
 - **Repositori Produksi GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem) (`main` branch)
 - **URL GitHub Pages Publik:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
-- **Git Commit SHA:** `04d4ab0` (`release: Engineering Learning Ecosystem v1.0.0`)
-- **Status GitHub Actions:**
-  - **Workflow:** `Deploy Engineering Learning Ecosystem to GitHub Pages`
-  - **Workflow Run ID:** `45121005504`
-  - **Build & Verify Job:** ID `137515175593` — **SUCCESS**
-  - **Deploy to GitHub Pages Job:** ID `137515301293` — **SUCCESS**
-- **Hasil Verifikasi Produksi Daring:**
-  - Halaman utama merespons `HTTP 200 OK`.
-  - Seluruh aset CSS (`index-p3XXlGwj.css`) dan JS (`index-BHCbvGVt.js`) termuat bersih (`HTTP 200 OK`).
-  - Render DOM browser nyata (Chrome) memvalidasi ke-7 kartu Learning Hub dan ke-5 Jalur Belajar Lintas Disiplin.
-  - Bebas dari kesalahan konsol kritis (*0 console errors*).
+- **Target Pembaharuan v1.0.1:**
+  - Seluruh 7 Learning Hub memiliki tombol aksi "Buka Learning Hub" aktif menuju URL GitHub Pages masing-masing.
+  - Scientific Research & Experimental Methods resmi dinaikkan ke status **Tersedia Daring** (`deploymentStatus: 'deployed'`) dengan 51 bab daring aktif (`https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/`).
+  - Signal Processing dan Remote Sensing mempertahankan status pengembangan lokal (`deploymentStatus: 'local-only'`, `onlineAccessibleChapters: 0`) dengan label jelas *Segera Hadir* dan tautan GitHub Pages yang telah dialokasikan.
+  - Snapshot baseline CI terisolasi diselaraskan sehingga GitHub Actions runner tidak mengalami kemunduran status metadata.
 
 ---
 
-## 🗺️ 2. Pemetaan Aktual Ekosistem 7 Learning Hub (Terekonsiliasi Final)
+## 🗺️ 2. Pemetaan Aktual Ekosistem 7 Learning Hub (Terekonsiliasi Final v1.0.1)
 
-| Nama Learning Hub | Klaster Keilmuan | Kategori | Folder Lokal | Status Deployment | Bab Rencana | Bab Impl. | Bab Daring | Repositori GitHub & Artefak Terverifikasi |
+| Nama Learning Hub | Klaster Keilmuan | Kategori | Folder Lokal | Status Deployment | Bab Rencana | Bab Impl. | Bab Daring | URL Website Publik & Repositori |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Python Learning Hub** | Computing & AI | Programming | `Alpro-python` | **Tersedia Daring** | 55 | 55 | 30 | `aji-nurcahyo/Python-Learning-Hub`<br>309 Contoh CPython 3.12, 30 Slides |
-| **AI Learning Hub** | Computing & AI | AI | `Kecerdasan Buatan` | **Tersedia Daring** | 40 | 40 | 40 | `aji-nurcahyo/AI-Learning-Hub`<br>40 Slides, 5 Track Labs |
-| **IoT Learning Hub** | Sensing, Signals & Embedded | IoT | `Internet Of Things` | **Tersedia Daring** | 40 | 40 | 40 | `aji-nurcahyo/IoT-Learning-Hub`<br>40 Slides, Fondasi Daring (Hardware Untested) |
-| **Multimedia & CV Hub** | Vision & Geospatial | Multimedia & CV | `Multimedia & Computer Vision` | **Tersedia Daring** | 60 | 60 | 60 | `aji-nurcahyo/Multimedia-Computer-Vision-Learning-Hub`<br>60 Slides, 18 Client Labs (53 Playgrounds) |
-| **Signal Processing Hub** | Sensing, Signals & Embedded | Signal Processing | `Signal Processing` | **Pengembangan Lokal** | 113 | 28 | 0 | [`aji-nurcahyo/Signal-Processing-Learning-Hub`](https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git)<br>115 Slide Deck HTML Standalone (Repositori Terdaftar) |
-| **Remote Sensing Hub** | Vision & Geospatial | Remote Sensing | `Remote Sensing & Geospatial Intelligence` | **Pengembangan Lokal** | 28 | 23 | 0 | `aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub`<br>23 Slide Decks, 2 Simulator Lab Interaktif |
-| **Scientific Research Hub** | Scientific Research | Research Methodology | `Scientific Research & Experimental Methods`| **Pengembangan Lokal** | 51 | 51 | 0 | `aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub`<br>15 Lab Komputasi Reproduktif, 10 Templat Riset |
-| **TOTAL EKOSISTEM** | **4 Klaster** | **7 Domain** | — | **4 Daring / 3 Lokal** | **387** | **297** | **170** | **308 Slide Decks, 40 Lab, 309 CPython, 10 Templat** |
+| **Python Learning Hub** | Computing & AI | Programming | `Alpro-python` | **Tersedia Daring** | 55 | 55 | 30 | [`aji-nurcahyo.github.io/Python-Learning-Hub`](https://aji-nurcahyo.github.io/Python-Learning-Hub/)<br>309 Contoh CPython 3.12, 30 Slides |
+| **AI Learning Hub** | Computing & AI | AI | `Kecerdasan Buatan` | **Tersedia Daring** | 40 | 40 | 40 | [`aji-nurcahyo.github.io/AI-Learning-Hub`](https://aji-nurcahyo.github.io/AI-Learning-Hub/)<br>40 Slides, 5 Track Labs |
+| **IoT Learning Hub** | Sensing, Signals & Embedded | IoT | `Internet Of Things` | **Tersedia Daring** | 40 | 40 | 40 | [`aji-nurcahyo.github.io/IoT-Learning-Hub`](https://aji-nurcahyo.github.io/IoT-Learning-Hub/)<br>40 Slides, Fondasi Daring (Hardware Untested) |
+| **Multimedia & CV Hub** | Vision & Geospatial | Multimedia & CV | `Multimedia & Computer Vision` | **Tersedia Daring** | 60 | 60 | 60 | [`aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub`](https://aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub/)<br>60 Slides, 18 Client Labs (53 Playgrounds) |
+| **Scientific Research Hub** | Scientific Research | Research Methodology | `Scientific Research & Experimental Methods`| **Tersedia Daring** | 51 | 51 | 51 | [`aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub`](https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/)<br>51 Bab Daring, 15 Lab Komputasi, 10 Templat Riset |
+| **Signal Processing Hub** | Sensing, Signals & Embedded | Signal Processing | `Signal Processing` | **Pengembangan Lokal** (Segera Hadir) | 113 | 28 | 0 | [`aji-nurcahyo.github.io/Signal-Processing-Learning-Hub`](https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/)<br>115 Slide Deck HTML (Repositori GitHub Terdaftar) |
+| **Remote Sensing Hub** | Vision & Geospatial | Remote Sensing | `Remote Sensing & Geospatial Intelligence` | **Pengembangan Lokal** (Segera Hadir) | 28 | 23 | 0 | [`aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub`](https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/)<br>23 Slide Decks, 2 Simulator Lab Interaktif |
+| **TOTAL EKOSISTEM** | **4 Klaster** | **7 Domain** | — | **5 Daring / 2 Lokal** | **387** | **297** | **221** | **308 Slide Decks, 40 Lab, 309 CPython, 10 Templat** |
 
 > [!IMPORTANT]
 > **PERINGATAN PROTOKOL READ-ONLY:**  

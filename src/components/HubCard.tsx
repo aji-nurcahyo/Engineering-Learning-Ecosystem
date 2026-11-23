@@ -242,9 +242,23 @@ export const HubCard: React.FC<HubCardProps> = ({
               href={hub.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-700 px-3 py-2 text-xs font-semibold text-white shadow-2xs transition hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 dark:bg-brand-600 dark:hover:bg-brand-500"
+              className={`flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold shadow-2xs transition focus-visible:outline-none focus-visible:ring-2 ${
+                hub.deploymentStatus === 'deployed'
+                  ? 'bg-brand-700 text-white hover:bg-brand-800 focus-visible:ring-brand-500 dark:bg-brand-600 dark:hover:bg-brand-500'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700'
+              }`}
+              title={
+                hub.deploymentStatus === 'deployed'
+                  ? `Buka situs web daring ${hub.title}`
+                  : `Tautan publik terdaftar (${hub.websiteUrl}) — situs web segera hadir`
+              }
             >
               <span>Buka Learning Hub</span>
+              {hub.deploymentStatus === 'local-only' && (
+                <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+                  Segera Hadir
+                </span>
+              )}
               <ExternalLink className="h-3.5 w-3.5" />
             </a>
           ) : (

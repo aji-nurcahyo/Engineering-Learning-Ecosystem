@@ -112,7 +112,7 @@ const BASELINE_SNAPSHOT = {
     hubId: 'signal-processing-learning-hub',
     title: 'Signal Processing Learning Hub',
     deploymentStatus: 'local-only',
-    websiteUrl: null,
+    websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
     metrics: {
       plannedChapters: 113,
@@ -133,7 +133,7 @@ const BASELINE_SNAPSHOT = {
     hubId: 'remote-sensing-hub',
     title: 'Remote Sensing & Geospatial Intelligence Learning Hub',
     deploymentStatus: 'local-only',
-    websiteUrl: null,
+    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
     metrics: {
       plannedChapters: 28,
@@ -154,24 +154,24 @@ const BASELINE_SNAPSHOT = {
   'scientific-research-hub': {
     hubId: 'scientific-research-hub',
     title: 'Scientific Research & Experimental Methods Learning Hub',
-    deploymentStatus: 'local-only',
-    websiteUrl: null,
+    deploymentStatus: 'deployed',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub',
     metrics: {
       plannedChapters: 51,
       implementedChapters: 51,
       contentPublishedChapters: 51,
-      onlineAccessibleChapters: 0,
+      onlineAccessibleChapters: 51,
       researchTemplatesCount: 10,
       interactiveLabsCount: 15
     },
     plannedChaptersCount: 51,
     implementedChaptersCount: 51,
-    publishedChaptersCount: 0,
+    publishedChaptersCount: 51,
     sourceManifest: 'Scientific Research & Experimental Methods/src/data/chapters_parsed.json',
-    sourceRevision: 'local-dev-c51',
+    sourceRevision: 'v2.0.0 (commit main)',
     lastVerifiedAt: '2026-11-23',
-    verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 51 file bab lengkap di src/lessons/ dengan 15 modul laboratorium komputasi dan 10 templat riset.'
+    verificationNotes: '51 bab akademik daring di GitHub Pages dengan 15 modul laboratorium komputasi dan 10 templat riset.'
   }
 };
 
@@ -339,7 +339,7 @@ const adapters = [
       }
       return {
         deploymentStatus: 'local-only',
-        websiteUrl: null,
+        websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
         metrics: {
           plannedChapters: plannedCount,
@@ -378,7 +378,7 @@ const adapters = [
       }
       return {
         deploymentStatus: 'local-only',
-        websiteUrl: null,
+        websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
         repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
         metrics: {
           plannedChapters: plannedCount,
@@ -414,21 +414,21 @@ const adapters = [
         if (files.length > 0) implementedCount = files.length;
       }
       return {
-        deploymentStatus: 'local-only',
-        websiteUrl: null,
+        deploymentStatus: 'deployed',
+        websiteUrl: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
         repositoryUrl: 'https://github.com/aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub',
         metrics: {
           plannedChapters: plannedCount,
           implementedChapters: implementedCount,
           contentPublishedChapters: implementedCount,
-          onlineAccessibleChapters: 0,
+          onlineAccessibleChapters: 51,
           researchTemplatesCount: 10,
           interactiveLabsCount: 15
         },
         sourceManifest: 'Scientific Research & Experimental Methods/src/data/chapters_parsed.json',
-        sourceRevision: 'local-dev-c51',
+        sourceRevision: 'v2.0.0 (commit main)',
         lastVerifiedAt: '2026-11-23',
-        verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 51 file bab lengkap di src/lessons/ dengan 15 modul laboratorium komputasi dan 10 templat riset.'
+        verificationNotes: 'Platform akademik aktif di GitHub Pages; 51 bab daring lengkap dengan 15 modul laboratorium komputasi dan 10 templat riset.'
       };
     }
   }

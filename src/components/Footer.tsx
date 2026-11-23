@@ -89,7 +89,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab }) => {
           {/* Col 3: Learning Hubs Direct Links */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
-              Learning Hubs Daring
+              Katalog Learning Hubs
             </h4>
             <ul className="space-y-2 text-xs">
               {LEARNING_HUBS.map(hub => (
@@ -102,6 +102,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab }) => {
                       className="inline-flex items-center gap-1 text-slate-600 hover:text-brand-600 dark:text-slate-400 dark:hover:text-brand-400 transition-colors"
                     >
                       <span className="truncate">{hub.title}</span>
+                      {hub.deploymentStatus === 'local-only' && (
+                        <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">
+                          (Segera Hadir)
+                        </span>
+                      )}
                       <ExternalLink className="h-3 w-3 shrink-0" />
                     </a>
                   ) : (

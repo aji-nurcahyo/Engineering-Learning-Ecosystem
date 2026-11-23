@@ -306,8 +306,8 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     iconName: 'Activity',
     deploymentStatus: 'local-only',
     status: 'in-development',
-    statusLabel: 'Pengembangan Lokal (28 Bab Terbit)',
-    websiteUrl: undefined,
+    statusLabel: 'Pengembangan Lokal (Segera Hadir)',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
     metrics: {
       plannedChapters: 113,
@@ -375,8 +375,8 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     iconName: 'Globe',
     deploymentStatus: 'local-only',
     status: 'in-development',
-    statusLabel: 'Pengembangan Lokal (23 Bab Terbit)',
-    websiteUrl: undefined,
+    statusLabel: 'Pengembangan Lokal (Segera Hadir)',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
     metrics: {
       plannedChapters: 28,
@@ -443,16 +443,16 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     cluster: 'Scientific Research & Methodology',
     category: 'Scientific Research & Methodology',
     iconName: 'FlaskConical',
-    deploymentStatus: 'local-only',
-    status: 'in-development',
-    statusLabel: 'Pengembangan Lokal (51 Bab Terbit)',
-    websiteUrl: undefined,
+    deploymentStatus: 'deployed',
+    status: 'published',
+    statusLabel: 'Tersedia di GitHub Pages',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub',
     metrics: {
       plannedChapters: 51,
       implementedChapters: 51,
       contentPublishedChapters: 51,
-      onlineAccessibleChapters: 0, // Belum dipublikasikan ke remote GitHub Pages
+      onlineAccessibleChapters: 51,
       researchTemplatesCount: 10,
       interactiveLabsCount: 15,
     },
@@ -460,7 +460,7 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     implementedChaptersCount: 51,
     publishedChaptersCount: 51,
     chaptersCount: 51,
-    chaptersBreakdown: '51 Bab Akademik Terbit Lokal (5 Pilar Metodologi) · 15 Lab Komputasi + 10 Templat Riset',
+    chaptersBreakdown: '51 Bab Akademik Daring (5 Pilar Metodologi) · 15 Lab Komputasi + 10 Templat Riset',
     topics: [
       'Philosophy of Science & Research Design',
       'Quantitative & Statistical Experimentation',
@@ -477,9 +477,9 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     },
     provenance: {
       sourceManifest: 'Scientific Research & Experimental Methods/src/data/chapters_parsed.json',
-      sourceRevision: 'v2.0.0 (local)',
+      sourceRevision: 'v2.0.0 (commit main)',
       lastSynchronizedAt: '2026-11-23',
-      verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 51 file bab lengkap di src/lessons/ dengan 15 modul laboratorium komputasi dan 10 templat riset.'
+      verificationNotes: 'Platform akademik aktif di GitHub Pages; 51 bab daring lengkap dengan 15 modul laboratorium komputasi dan 10 templat riset.'
     },
     featured: false,
     lastUpdated: 'November 2026',
@@ -498,11 +498,11 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     ],
     prerequisites: ['Statistika probabilitas dasar', 'Kemampuan membaca literatur ilmiah bahasa Inggris'],
     chaptersPreview: [
-      { number: '01', title: 'Fondasi Riset Ilmiah & Tradisi Rekayasa', focus: 'Metode Ilmiah, Penalaran Deduktif-Induktif & Novelty', status: 'implemented' },
-      { number: '12', title: 'Desain Eksperimen & Kontrol Variabel', focus: 'Randomisasi, Replikasi, Validitas Internal & Eksternal', status: 'implemented' },
-      { number: '22', title: 'Statistika Inferensial & Pengujian Hipotesis', focus: 'Nilai p, Confidence Intervals, Koreksi Bonferroni', status: 'implemented' },
-      { number: '34', title: 'Anatomi Manuskrip Jurnal Q1', focus: 'Title, Abstract, Results & Discussion Berstandar Tinggi', status: 'implemented' },
-      { number: '45', title: 'Proses Peer-Review & Strategi Respon Reviewer', focus: 'Rebuttal Letter, Etika Penulisan & Komunikasi Ilmiah', status: 'implemented' }
+      { number: '01', title: 'Fondasi Riset Ilmiah & Tradisi Rekayasa', focus: 'Metode Ilmiah, Penalaran Deduktif-Induktif & Novelty', status: 'published' },
+      { number: '12', title: 'Desain Eksperimen & Kontrol Variabel', focus: 'Randomisasi, Replikasi, Validitas Internal & Eksternal', status: 'published' },
+      { number: '22', title: 'Statistika Inferensial & Pengujian Hipotesis', focus: 'Nilai p, Confidence Intervals, Koreksi Bonferroni', status: 'published' },
+      { number: '34', title: 'Anatomi Manuskrip Jurnal Q1', focus: 'Title, Abstract, Results & Discussion Berstandar Tinggi', status: 'published' },
+      { number: '45', title: 'Proses Peer-Review & Strategi Respon Reviewer', focus: 'Rebuttal Letter, Etika Penulisan & Komunikasi Ilmiah', status: 'published' }
     ]
   }
 ];

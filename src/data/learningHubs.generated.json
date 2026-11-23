@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T05:56:55.847Z",
+  "generatedAt": "2026-11-23T09:42:41.805Z",
   "engine": "Learning Hub Dashboard Manifest Aggregator v2.0 (DASH-02R)",
   "totalRegistered": 7,
   "hubsFoundInWorkspace": 7,
@@ -96,28 +96,28 @@
       "hubId": "signal-processing-learning-hub",
       "folderFound": true,
       "deploymentStatus": "local-only",
-      "websiteUrl": null,
+      "websiteUrl": "https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/",
       "repositoryUrl": "https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git",
       "metrics": {
         "plannedChapters": 113,
-        "implementedChapters": 31,
-        "contentPublishedChapters": 31,
+        "implementedChapters": 35,
+        "contentPublishedChapters": 35,
         "onlineAccessibleChapters": 0,
-        "slideDecksCount": 127
+        "slideDecksCount": 144
       },
       "sourceManifest": "Signal Processing/src/data/curriculum_metadata.json",
       "sourceRevision": "local-dev-c28",
       "lastVerifiedAt": "2026-11-23",
       "verificationNotes": "Repositori GitHub terdaftar (belum memiliki source code publik / deployment daring); 28 bab terimplementasi di direktori lokal dengan 115 slide deck HTML siap saji.",
       "plannedChaptersCount": 113,
-      "implementedChaptersCount": 31,
+      "implementedChaptersCount": 35,
       "publishedChaptersCount": 0
     },
     "remote-sensing-hub": {
       "hubId": "remote-sensing-hub",
       "folderFound": true,
       "deploymentStatus": "local-only",
-      "websiteUrl": null,
+      "websiteUrl": "https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/",
       "repositoryUrl": "https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub",
       "metrics": {
         "plannedChapters": 28,
@@ -138,24 +138,24 @@
     "scientific-research-hub": {
       "hubId": "scientific-research-hub",
       "folderFound": true,
-      "deploymentStatus": "local-only",
-      "websiteUrl": null,
+      "deploymentStatus": "deployed",
+      "websiteUrl": "https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/",
       "repositoryUrl": "https://github.com/aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub",
       "metrics": {
         "plannedChapters": 51,
         "implementedChapters": 51,
         "contentPublishedChapters": 51,
-        "onlineAccessibleChapters": 0,
+        "onlineAccessibleChapters": 51,
         "researchTemplatesCount": 10,
         "interactiveLabsCount": 15
       },
       "sourceManifest": "Scientific Research & Experimental Methods/src/data/chapters_parsed.json",
-      "sourceRevision": "local-dev-c51",
+      "sourceRevision": "v2.0.0 (commit main)",
       "lastVerifiedAt": "2026-11-23",
-      "verificationNotes": "Repositori GitHub terdaftar (belum memiliki deployment daring); 51 file bab lengkap di src/lessons/ dengan 15 modul laboratorium komputasi dan 10 templat riset.",
+      "verificationNotes": "Platform akademik aktif di GitHub Pages; 51 bab daring lengkap dengan 15 modul laboratorium komputasi dan 10 templat riset.",
       "plannedChaptersCount": 51,
       "implementedChaptersCount": 51,
-      "publishedChaptersCount": 0
+      "publishedChaptersCount": 51
     }
   }
 }
