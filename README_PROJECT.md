@@ -9,7 +9,7 @@
 
 - **Nama Publik Portal:** **Engineering Learning Ecosystem**
 - **Versi Rilis:** `v1.0.1`
-- **Status Rilis:** **RELEASED & VERIFIED** (Sinkronisasi Tautan Publik & Status Deployment 7 Hub)
+- **Status Rilis:** **RELEASED & VERIFIED** (Publikasi GitHub Pages Aktif & Terverifikasi Nyata)
 - **Nama Folder Lokal:** `Learning-Hub-Dashboard` (dipertahankan di `D:\Workstation\Repo My Corses\Learning-Hub-Dashboard`)
 - **Institusi Resmi:** Program Studi S1 Teknik Telekomunikasi, Institut Teknologi Sumatera (ITERA)
 - **Payung Riset:** Intelligent Sensing, Vision and Wireless Systems (ISVWS) 2026–2040
@@ -17,11 +17,21 @@
 - **Inisiator & Pengembang:** Aji Pamungkas Tri Nurcahyo
 - **Repositori Produksi GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem) (`main` branch)
 - **URL GitHub Pages Publik:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
-- **Target Pembaharuan v1.0.1:**
-  - Seluruh 7 Learning Hub memiliki tombol aksi "Buka Learning Hub" aktif menuju URL GitHub Pages masing-masing.
-  - Scientific Research & Experimental Methods resmi dinaikkan ke status **Tersedia Daring** (`deploymentStatus: 'deployed'`) dengan 51 bab daring aktif (`https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/`).
-  - Signal Processing dan Remote Sensing mempertahankan status pengembangan lokal (`deploymentStatus: 'local-only'`, `onlineAccessibleChapters: 0`) dengan label jelas *Segera Hadir* dan tautan GitHub Pages yang telah dialokasikan.
-  - Snapshot baseline CI terisolasi diselaraskan sehingga GitHub Actions runner tidak mengalami kemunduran status metadata.
+- **Git Commit SHA Rilis v1.0.1:** `34eb8af821aa6ac470f35ddbbce376278d39c016` (`release: Engineering Learning Ecosystem v1.0.1 - synchronize public hub links & update Scientific Research deployment`)
+- **Status GitHub Actions Workflow:**
+  - **Workflow Name:** `Deploy Engineering Learning Ecosystem to GitHub Pages`
+  - **Workflow Run ID:** `45149652495`
+  - **Run URL:** [`https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45149652495`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45149652495)
+  - **Job 1 (Build & Verify Dashboard):** ID `137607541826` — **SUCCESS**
+  - **Job 2 (Deploy to GitHub Pages):** ID `137607673171` — **SUCCESS**
+- **Hasil Verifikasi Produksi Daring Nyata (Headless Chrome DOM Audit):**
+  - Halaman utama merespons `HTTP 200 OK` (ETag: `"6b040aec-a81"`).
+  - Bundel produksi JS aktif: `index-V8RZcF7g.js` (`HTTP 200 OK`).
+  - Bundel produksi CSS aktif: `index-p3XXlGwj.css` (`HTTP 200 OK`).
+  - Seluruh 7 kartu Learning Hub menyajikan tombol aksi "Buka Learning Hub" aktif menuju alamat GitHub Pages masing-masing.
+  - Scientific Research & Experimental Methods terverifikasi aktif daring (`deploymentStatus: 'deployed'`) dengan 51 bab materi online.
+  - Signal Processing dan Remote Sensing terverifikasi aman (`deploymentStatus: 'local-only'`, 0 online chapters) dengan label penjelas *Segera Hadir*.
+  - Bebas dari kesalahan konsol kritis (*0 console errors*).
 
 ---
 
