@@ -1,0 +1,161 @@
+{
+  "generatedAt": "2026-11-23T05:56:55.847Z",
+  "engine": "Learning Hub Dashboard Manifest Aggregator v2.0 (DASH-02R)",
+  "totalRegistered": 7,
+  "hubsFoundInWorkspace": 7,
+  "hubsUsingFallbackSnapshot": 0,
+  "hubs": {
+    "python-learning-hub": {
+      "hubId": "python-learning-hub",
+      "folderFound": true,
+      "deploymentStatus": "deployed",
+      "websiteUrl": "https://aji-nurcahyo.github.io/Python-Learning-Hub/",
+      "repositoryUrl": "https://github.com/aji-nurcahyo/Python-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 55,
+        "implementedChapters": 55,
+        "contentPublishedChapters": 55,
+        "onlineAccessibleChapters": 30,
+        "verifiedExamplesCount": 309,
+        "slideDecksCount": 30
+      },
+      "sourceManifest": "Alpro-python/src/curriculum/index.ts",
+      "sourceRevision": "v2.1.0",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "30 bab inti daring di GitHub Pages; 309 skrip contoh lulus pengujian CPython 3.12.",
+      "plannedChaptersCount": 55,
+      "implementedChaptersCount": 55,
+      "publishedChaptersCount": 30
+    },
+    "ai-learning-hub": {
+      "hubId": "ai-learning-hub",
+      "folderFound": true,
+      "deploymentStatus": "deployed",
+      "websiteUrl": "https://aji-nurcahyo.github.io/AI-Learning-Hub/",
+      "repositoryUrl": "https://github.com/aji-nurcahyo/AI-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 40,
+        "implementedChapters": 40,
+        "contentPublishedChapters": 40,
+        "onlineAccessibleChapters": 40,
+        "slideDecksCount": 40,
+        "interactiveLabsCount": 5
+      },
+      "sourceManifest": "Kecerdasan Buatan/content/levels.json",
+      "sourceRevision": "v1.4.0",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "40 bab lengkap terdistribusi dalam 4 Level dengan routing daring aktif dan 5 laboratorium track spesialisasi.",
+      "plannedChaptersCount": 40,
+      "implementedChaptersCount": 40,
+      "publishedChaptersCount": 40
+    },
+    "iot-learning-hub": {
+      "hubId": "iot-learning-hub",
+      "folderFound": true,
+      "deploymentStatus": "deployed",
+      "websiteUrl": "https://aji-nurcahyo.github.io/IoT-Learning-Hub/",
+      "repositoryUrl": "https://github.com/aji-nurcahyo/IoT-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 40,
+        "implementedChapters": 40,
+        "contentPublishedChapters": 40,
+        "onlineAccessibleChapters": 40,
+        "slideDecksCount": 40
+      },
+      "sourceManifest": "Internet Of Things/content/catalog.json",
+      "sourceRevision": "v1.0.0-foundation",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "40 bab arsitektur IoT terunggah daring; status verifikasi perangkat fisik marked as untested hardware.",
+      "plannedChaptersCount": 40,
+      "implementedChaptersCount": 40,
+      "publishedChaptersCount": 40
+    },
+    "multimedia-cv-learning-hub": {
+      "hubId": "multimedia-cv-learning-hub",
+      "folderFound": true,
+      "deploymentStatus": "deployed",
+      "websiteUrl": "https://aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub/",
+      "repositoryUrl": "https://github.com/aji-nurcahyo/Multimedia-Computer-Vision-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 60,
+        "implementedChapters": 60,
+        "contentPublishedChapters": 60,
+        "onlineAccessibleChapters": 60,
+        "interactiveLabsCount": 18,
+        "slideDecksCount": 60
+      },
+      "sourceManifest": "Multimedia & Computer Vision/content/chapters",
+      "sourceRevision": "v1.2.0",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "60 bab lengkap dengan slides.json & index.md; 18 modul interaktif klien tervalidasi pada Section 01–03.",
+      "plannedChaptersCount": 60,
+      "implementedChaptersCount": 60,
+      "publishedChaptersCount": 60
+    },
+    "signal-processing-learning-hub": {
+      "hubId": "signal-processing-learning-hub",
+      "folderFound": true,
+      "deploymentStatus": "local-only",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git",
+      "metrics": {
+        "plannedChapters": 113,
+        "implementedChapters": 31,
+        "contentPublishedChapters": 31,
+        "onlineAccessibleChapters": 0,
+        "slideDecksCount": 127
+      },
+      "sourceManifest": "Signal Processing/src/data/curriculum_metadata.json",
+      "sourceRevision": "local-dev-c28",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "Repositori GitHub terdaftar (belum memiliki source code publik / deployment daring); 28 bab terimplementasi di direktori lokal dengan 115 slide deck HTML siap saji.",
+      "plannedChaptersCount": 113,
+      "implementedChaptersCount": 31,
+      "publishedChaptersCount": 0
+    },
+    "remote-sensing-hub": {
+      "hubId": "remote-sensing-hub",
+      "folderFound": true,
+      "deploymentStatus": "local-only",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 28,
+        "implementedChapters": 28,
+        "contentPublishedChapters": 28,
+        "onlineAccessibleChapters": 0,
+        "slideDecksCount": 28,
+        "interactiveLabsCount": 2
+      },
+      "sourceManifest": "Remote Sensing & Geospatial Intelligence/content/curriculum/master-curriculum.json",
+      "sourceRevision": "local-dev-c23",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "Repositori GitHub terdaftar (belum memiliki deployment daring); 23 bab terstruktur dengan 23 slide deck dan 2 simulator lab interaktif.",
+      "plannedChaptersCount": 28,
+      "implementedChaptersCount": 28,
+      "publishedChaptersCount": 0
+    },
+    "scientific-research-hub": {
+      "hubId": "scientific-research-hub",
+      "folderFound": true,
+      "deploymentStatus": "local-only",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/aji-nurcahyo/Scientific-Research-Experimental-Methods-Learning-Hub",
+      "metrics": {
+        "plannedChapters": 51,
+        "implementedChapters": 51,
+        "contentPublishedChapters": 51,
+        "onlineAccessibleChapters": 0,
+        "researchTemplatesCount": 10,
+        "interactiveLabsCount": 15
+      },
+      "sourceManifest": "Scientific Research & Experimental Methods/src/data/chapters_parsed.json",
+      "sourceRevision": "local-dev-c51",
+      "lastVerifiedAt": "2026-11-23",
+      "verificationNotes": "Repositori GitHub terdaftar (belum memiliki deployment daring); 51 file bab lengkap di src/lessons/ dengan 15 modul laboratorium komputasi dan 10 templat riset.",
+      "plannedChaptersCount": 51,
+      "implementedChaptersCount": 51,
+      "publishedChaptersCount": 0
+    }
+  }
+}

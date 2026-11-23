@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Learning Ecosystem — ITERA</title>
+    <meta name="description" content="Portal utama untuk menjelajahi dan mengakses seluruh ekosistem kurikulum modul pembelajaran terbuka (OER) Institut Teknologi Sumatera." />
+    <meta name="author" content="Aji Pamungkas Tri Nurcahyo" />
+    <meta name="theme-color" content="#0f2b48" />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="Engineering Learning Ecosystem — ITERA" />
+    <meta property="og:description" content="Portal pusat 7 Learning Hub dalam 4 klaster keilmuan: Komputasi & AI, Sistem Sinyal & IoT, Visi & Geospasial, serta Metodologi Riset Ilmiah." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Engineering Learning Ecosystem" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Engineering Learning Ecosystem — ITERA" />
+    <meta name="twitter:description" content="Portal pusat 7 Learning Hub akademik terbuka Institut Teknologi Sumatera." />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230272b7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z'/><path d='M6 6h10'/><path d='M6 10h10'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (theme === 'dark' || (!theme && systemDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white dark:bg-[#0b1120] dark:text-slate-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
