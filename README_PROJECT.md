@@ -1,29 +1,33 @@
 # Engineering Learning Ecosystem — Project Continuation Reference
 **Portal Utama Ekosistem Pembelajaran Terbuka — Institut Teknologi Sumatera (ITERA)**  
 *Dokumen Rujukan Utama untuk Sesi AI & Pengembang*  
-*Terakhir Diperbarui: 23 November 2026 (Fase DASH-02R Hotfix Selesai — PRODUCTION READY)*
+*Terakhir Diperbarui: 23 November 2026 (Fase RELEASE-01 — RELEASED & VERIFIED v1.0.0)*
 
 ---
 
-## 📌 1. Identitas & Status Proyek
+## 📌 1. Identitas & Status Rilis Produksi (v1.0.0)
 
 - **Nama Publik Portal:** **Engineering Learning Ecosystem**
-- **Nama Folder Lokal:** `Learning-Hub-Dashboard` (tetap dipertahankan di `D:\Workstation\Repo My Corses\Learning-Hub-Dashboard`)
+- **Versi Rilis:** `v1.0.0`
+- **Status Rilis:** **RELEASED & VERIFIED** (Publikasi GitHub Pages Aktif & Terverifikasi Nyata)
+- **Nama Folder Lokal:** `Learning-Hub-Dashboard` (dipertahankan di `D:\Workstation\Repo My Corses\Learning-Hub-Dashboard`)
 - **Institusi Resmi:** Program Studi S1 Teknik Telekomunikasi, Institut Teknologi Sumatera (ITERA)
 - **Payung Riset:** Intelligent Sensing, Vision and Wireless Systems (ISVWS) 2026–2040
 - **Fokus Kepakaran:** Intelligent Computer Vision
 - **Inisiator & Pengembang:** Aji Pamungkas Tri Nurcahyo
-- **Target Repositori GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem)
-- **Target GitHub Pages:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
-- **Status Fase Saat Ini:** **Fase DASH-02R Final Hotfix SELESAI (PRODUCTION READY)**.
-  - Nama publik portal diselaraskan menjadi **Engineering Learning Ecosystem**.
-  - Target repositori GitHub dan GitHub Pages dikonfigurasi pada `.github/workflows/deploy.yml`, `index.html`, `public/404.html`, dan navigasi UI.
-  - Seluruh 7 Repositori GitHub resmi untuk ketujuh Learning Hub (termasuk `Signal Processing`, `Remote Sensing`, dan `Scientific Research`) telah terdaftar dengan URL resmi.
-  - Metrik seluruh ekosistem diaudit berbasis bukti file nyata (308 slide deck, 40 laboratorium interaktif terverifikasi, 309 script CPython teruji, 10 templat riset).
-  - Skrip agregasi manifest `scripts/sync-manifests.mjs` v2.0 mendukung live filesystem audit dan *isolated CI fallback* (GitHub Actions runner).
-  - 5 Rekomendasi Alur Belajar Lintas Disiplin (*Cross-Hub Learning Paths*) tervalidasi 100% bebas dari dead links.
-  - Dokumen laporan kesiapan rilis final tersedia di [`docs/DASH_02R_FINAL_HOTFIX_REPORT.md`](docs/DASH_02R_FINAL_HOTFIX_REPORT.md) dan [`docs/DASH_02R_RELEASE_READINESS_REPORT.md`](docs/DASH_02R_RELEASE_READINESS_REPORT.md).
-  - Berhenti di Gerbang Rilis Final (*Release Approval Gate*) tanpa melakukan auto-commit atau push ke remote.
+- **Repositori Produksi GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem) (`main` branch)
+- **URL GitHub Pages Publik:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
+- **Git Commit SHA:** `04d4ab0` (`release: Engineering Learning Ecosystem v1.0.0`)
+- **Status GitHub Actions:**
+  - **Workflow:** `Deploy Engineering Learning Ecosystem to GitHub Pages`
+  - **Workflow Run ID:** `45121005504`
+  - **Build & Verify Job:** ID `137515175593` — **SUCCESS**
+  - **Deploy to GitHub Pages Job:** ID `137515301293` — **SUCCESS**
+- **Hasil Verifikasi Produksi Daring:**
+  - Halaman utama merespons `HTTP 200 OK`.
+  - Seluruh aset CSS (`index-p3XXlGwj.css`) dan JS (`index-BHCbvGVt.js`) termuat bersih (`HTTP 200 OK`).
+  - Render DOM browser nyata (Chrome) memvalidasi ke-7 kartu Learning Hub dan ke-5 Jalur Belajar Lintas Disiplin.
+  - Bebas dari kesalahan konsol kritis (*0 console errors*).
 
 ---
 
@@ -99,10 +103,22 @@ npm run preview
 
 ---
 
-## 📋 6. Panduan untuk AI Session Selanjutnya
+## ⚠️ 6. Batasan Diketahui (Known Limitations v1.0.0)
+
+1. **Pengujian Fisik Perangkat Keras IoT:**
+   - 40 Bab Internet of Things Hub telah ter-deploy di GitHub Pages, namun pengujian hardware fisik masih berstatus `untested hardware`.
+2. **Repositori Berstatus Pengembangan Lokal:**
+   - `Signal Processing Learning Hub`, `Remote Sensing & Geospatial Intelligence Learning Hub`, dan `Scientific Research & Experimental Methods Learning Hub` telah memiliki repositori GitHub resmi terdaftar, namun belum memiliki hosting web publik yang aktif (`deploymentStatus: 'local-only'`, `onlineAccessibleChapters: 0`). Tombol aksi portal secara aman menyajikan label *Pengembangan Lokal* tanpa tautan kosong.
+3. **Kompatibilitas Lingkungan CI:**
+   - Skrip `scripts/sync-manifests.mjs` secara deterministik menggunakan `BASELINE_SNAPSHOT` bila dijalankan pada GitHub Actions runner tanpa keberadaan folder repositori lokal tetangga.
+
+---
+
+## 📋 7. Panduan untuk AI Session Selanjutnya
 
 Jika pengguna memberikan instruksi lanjutan:
 1. **Dilarang melakukan rebuild aplikasi dari nol.**
 2. **Pertahankan arsitektur modular, skema metadata terekonsiliasi, dan 4 klaster keilmuan.**
 3. **Semua metrik wajib berbasis fakta empiris** dari manifest atau file lokal; dilarang mengarang bab atau status fiktif.
-4. **Sebelum melakukan git commit atau push remote**, selalu mintakan otorisasi eksplisit dari pengguna.
+4. **Kebijakan Read-Only:** Seluruh repositori tetangga bersifat read-only mutlak.
+5. **Sebelum melakukan git commit atau push remote**, selalu mintakan otorisasi eksplisit dari pengguna.
