@@ -17,11 +17,22 @@
 - **Inisiator & Pengembang:** Aji Pamungkas Tri Nurcahyo
 - **Repositori Produksi GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem) (`main` branch)
 - **URL GitHub Pages Publik:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
-- **Target Pembaharuan v1.0.2:**
-  - **Signal Processing Learning Hub:** Resmi diverifikasi dan diaktifkan status daring (`deploymentStatus: 'deployed'`) di [`https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/`](https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/) dengan 35 bab kurikulum inti daring (C01–C35, 144 pelajaran & slide deck).
-  - **Remote Sensing & Geospatial Intelligence Learning Hub:** Diperbarui ke URL publik resmi terbaru [`https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/`](https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/) dan diaktifkan status daring (`deploymentStatus: 'deployed'`) dengan 28 bab master kurikulum daring.
-  - **Target Ekosistem Tercapai Penuh:** 7 dari 7 Learning Hubs berstatus publik daring aktif (*7 deployed, 0 local-only*). Label "Segera Hadir" dihapus sepenuhnya.
-  - **Local Preview Enhancement:** Konfigurasi Vite preview (`vite.config.ts`) diperkaya dengan auto-detection base path dan preview redirect middleware, sehingga `npm run preview` berjalan mulus baik di root `/` maupun di base subpath `/Engineering-Learning-Ecosystem/`.
+- **Git Commit SHA Rilis v1.0.2:** `64604d4ef0dc74a0b32338732182e33facf26bd6` (`hotfix: synchronize all 7 learning hubs to deployed status & update Remote Sensing URL`)
+- **Status GitHub Actions Workflow:**
+  - **Workflow Name:** `Deploy Engineering Learning Ecosystem to GitHub Pages`
+  - **Workflow Run ID:** `45219429680`
+  - **Run URL:** [`https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45219429680`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45219429680)
+  - **Job 1 (Build & Verify Dashboard):** ID `137849337246` — **SUCCESS**
+  - **Job 2 (Deploy to GitHub Pages):** ID `137849586796` — **SUCCESS**
+- **Hasil Verifikasi Produksi Daring Nyata (Headless Chrome DOM Audit):**
+  - Halaman utama merespons `HTTP 200 OK` (ETag: `"6b046cf5-a81"`).
+  - Bundel produksi JS aktif: `index-BK4KZAKM.js` (`HTTP 200 OK`).
+  - Bundel produksi CSS aktif: `index-p3XXlGwj.css` (`HTTP 200 OK`).
+  - Seluruh 7 kartu Learning Hub menyajikan tombol aksi "Buka Learning Hub" aktif menuju alamat GitHub Pages masing-masing.
+  - Signal Processing Learning Hub terverifikasi aktif daring (`deploymentStatus: 'deployed'`) dengan 35 bab kurikulum inti daring (144 pelajaran & slide deck).
+  - Remote Sensing & Geospatial Intelligence Learning Hub terverifikasi aktif daring (`deploymentStatus: 'deployed'`) di URL resmi terbaru dengan 28 bab master kurikulum.
+  - Label "Segera Hadir" bernilai 0 di seluruh antarmuka portal (*0 Segera Hadir badges*).
+  - Bebas dari kesalahan konsol kritis (*0 console errors*).
 
 ---
 
