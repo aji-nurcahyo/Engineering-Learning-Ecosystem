@@ -304,23 +304,23 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     cluster: 'Sensing, Signals & Embedded Systems',
     category: 'Signal Processing',
     iconName: 'Activity',
-    deploymentStatus: 'local-only',
-    status: 'in-development',
-    statusLabel: 'Pengembangan Lokal (Segera Hadir)',
+    deploymentStatus: 'deployed',
+    status: 'published',
+    statusLabel: 'Tersedia di GitHub Pages',
     websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
     metrics: {
       plannedChapters: 113,
-      implementedChapters: 28,
-      contentPublishedChapters: 28,
-      onlineAccessibleChapters: 0, // Belum dipublikasikan ke remote GitHub Pages
-      slideDecksCount: 115,
+      implementedChapters: 35,
+      contentPublishedChapters: 35,
+      onlineAccessibleChapters: 35, // 35 Core chapters C01-C35 aktif daring di web app
+      slideDecksCount: 144,
     },
     plannedChaptersCount: 113,
-    implementedChaptersCount: 28,
-    publishedChaptersCount: 28,
-    chaptersCount: 28,
-    chaptersBreakdown: '113 Bab Terencana (4 Pilar Kurikulum) · 28 Bab Terimplementasi Lokal (115 Slide Pelajaran)',
+    implementedChaptersCount: 35,
+    publishedChaptersCount: 35,
+    chaptersCount: 35,
+    chaptersBreakdown: '113 Bab Terencana (4 Pilar Kurikulum) · 35 Bab Core Daring (144 Pelajaran & Slide)',
     topics: [
       'Discrete-Time Signals & Systems',
       'Fourier Transforms (DFT / 2D FFT)',
@@ -337,17 +337,17 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     },
     provenance: {
       sourceManifest: 'Signal Processing/src/data/curriculum_metadata.json',
-      sourceRevision: 'v1.0.0-rc (local)',
+      sourceRevision: 'v1.0.0-release',
       lastSynchronizedAt: '2026-11-23',
-      verificationNotes: 'Repositori GitHub resmi terdaftar (belum memiliki source code publik / deployment daring); 28 bab terimplementasi di direktori lokal dengan 115 slide deck HTML siap saji.'
+      verificationNotes: 'Platform akademik aktif di GitHub Pages; 35 bab inti daring (Level 1–4, Bab C01–C35) lengkap dengan 144 pelajaran dan slide presentasi.'
     },
     featured: false,
     lastUpdated: 'November 2026',
     levelStructure: [
-      'Pilar 1: Discrete-Time Signal Foundations (Bab C01–C28)',
-      'Pilar 2: Transform Analysis & Linear Systems (Bab C29–C56)',
-      'Pilar 3: Digital Filter Design & Stochastic Signals (Bab C57–C84)',
-      'Pilar 4: Intelligent Signal Perception & Machine Vision (Bab C85–C113)'
+      'Pilar 1: Discrete-Time Signal Foundations (Bab C01–C06)',
+      'Pilar 2: Transform Analysis & Linear Systems (Bab C07–C17)',
+      'Pilar 3: Digital Filter Design & Stochastic Signals (Bab C18–C25)',
+      'Pilar 4: Intelligent Signal Perception & Machine Vision (Bab C26–C35)'
     ],
     keyCompetencies: [
       'Representasi matematis sinyal kontinu vs diskret dan konvolusi linier',
@@ -357,11 +357,11 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     ],
     prerequisites: ['Kalkulus diferensial & integral', 'Aljabar matriks', 'Pemrograman Python (NumPy)'],
     chaptersPreview: [
-      { number: 'C01', title: 'Introduction to Signal Processing', focus: 'Taksonomi Sinyal Fisik, Siklus Akuisisi & Peran AI', status: 'implemented' },
-      { number: 'C05', title: 'Sampling Theorem & Aliasing', focus: 'Nyquist-Shannon Rate, Anti-Aliasing Filter & Rekonstruksi', status: 'implemented' },
-      { number: 'C10', title: 'Discrete Fourier Transform & FFT', focus: 'Dekomposisi Spektrum Frekuensi, Kompleksitas O(N log N)', status: 'implemented' },
-      { number: 'C15', title: 'FIR Filter Design', focus: 'Linear-Phase Systems, Windowing Method & Parks-McClellan', status: 'implemented' },
-      { number: 'C20', title: '2D Transforms for Visual Perception', focus: '2D DFT untuk Ekstraksi Fitur Citra & Tepi Objek', status: 'implemented' }
+      { number: 'C01', title: 'Introduction to Signal Processing', focus: 'Taksonomi Sinyal Fisik, Siklus Akuisisi & Peran AI', status: 'published' },
+      { number: 'C05', title: 'Sampling Theorem & Aliasing', focus: 'Nyquist-Shannon Rate, Anti-Aliasing Filter & Rekonstruksi', status: 'published' },
+      { number: 'C10', title: 'Discrete Fourier Transform & FFT', focus: 'Dekomposisi Spektrum Frekuensi, Kompleksitas O(N log N)', status: 'published' },
+      { number: 'C15', title: 'FIR Filter Design', focus: 'Linear-Phase Systems, Windowing Method & Parks-McClellan', status: 'published' },
+      { number: 'C20', title: '2D Transforms for Visual Perception', focus: '2D DFT untuk Ekstraksi Fitur Citra & Tepi Objek', status: 'published' }
     ]
   },
   {
@@ -373,24 +373,24 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     cluster: 'Vision & Geospatial Intelligence',
     category: 'Remote Sensing & Geospatial',
     iconName: 'Globe',
-    deploymentStatus: 'local-only',
-    status: 'in-development',
-    statusLabel: 'Pengembangan Lokal (Segera Hadir)',
-    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
-    repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
+    deploymentStatus: 'deployed',
+    status: 'published',
+    statusLabel: 'Tersedia di GitHub Pages',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/',
+    repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-Sensing-Geospatial-Intelligence-Learning-Hub',
     metrics: {
       plannedChapters: 28,
-      implementedChapters: 23,
-      contentPublishedChapters: 23,
-      onlineAccessibleChapters: 0, // Belum dipublikasikan ke remote GitHub Pages
+      implementedChapters: 28,
+      contentPublishedChapters: 28,
+      onlineAccessibleChapters: 28, // 28 bab master kurikulum aktif daring di GitHub Pages
       slideDecksCount: 23,
       interactiveLabsCount: 2,
     },
     plannedChaptersCount: 28,
-    implementedChaptersCount: 23,
-    publishedChaptersCount: 23,
-    chaptersCount: 23,
-    chaptersBreakdown: '28 Bab Terencana (4 Level / 8 Seksi) · 23 Bab Terimplementasi Lokal (23 Slide Decks + 2 Lab)',
+    implementedChaptersCount: 28,
+    publishedChaptersCount: 28,
+    chaptersCount: 28,
+    chaptersBreakdown: '28 Bab Master Kurikulum Daring (4 Level / 8 Seksi) · 23 Slide Decks + 2 Lab Interaktif',
     topics: [
       'Electromagnetic Radiation & Earth Observation',
       'Multispectral & Hyperspectral Imagery',
@@ -407,9 +407,9 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     },
     provenance: {
       sourceManifest: 'Remote Sensing & Geospatial Intelligence/content/curriculum/master-curriculum.json',
-      sourceRevision: 'v0.1.0 (local)',
+      sourceRevision: 'v1.0.0 (commit main)',
       lastSynchronizedAt: '2026-11-23',
-      verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 23 bab terstruktur dengan 23 slide deck dan 2 simulator lab interaktif.'
+      verificationNotes: 'Platform akademik aktif di GitHub Pages; 28 bab master kurikulum daring dengan 23 slide deck dan 2 simulator lab interaktif.'
     },
     featured: false,
     lastUpdated: 'November 2026',
@@ -427,11 +427,11 @@ export const LEARNING_HUBS: LearningHubMetadata[] = [
     ],
     prerequisites: ['Fisika gelombang elektromagnetik', 'Pemrosesan citra digital dasar', 'Python'],
     chaptersPreview: [
-      { number: '01', title: 'Pengantar Observasi Bumi & GEOINT', focus: 'Rantai Transmisi Informasi, Sensor Aktif vs Pasif', status: 'implemented' },
-      { number: '05', title: 'Sistem Sensor Multispektral Satelit', focus: 'Landsat, Sentinel-2, Modis & Resolusi Spasial/Spektral', status: 'implemented' },
-      { number: '09', title: 'Koreksi Atmosferik & Radiometrik', focus: 'Top-of-Atmosphere (TOA) ke Bottom-of-Atmosphere (BOA)', status: 'implemented' },
-      { number: '14', title: 'Analisis Indeks Spektral Biofisik', focus: 'NDVI, SAVI, NDWI & Estimasi Biomassa Permukaan', status: 'implemented' },
-      { number: '21', title: 'Prinsip Synthetic Aperture Radar (SAR)', focus: 'Hamburan Balik Radar, Polarimetri & Speckle Filtering', status: 'implemented' }
+      { number: '01', title: 'Pengantar Observasi Bumi & GEOINT', focus: 'Rantai Transmisi Informasi, Sensor Aktif vs Pasif', status: 'published' },
+      { number: '05', title: 'Sistem Sensor Multispektral Satelit', focus: 'Landsat, Sentinel-2, Modis & Resolusi Spasial/Spektral', status: 'published' },
+      { number: '09', title: 'Koreksi Atmosferik & Radiometrik', focus: 'Top-of-Atmosphere (TOA) ke Bottom-of-Atmosphere (BOA)', status: 'published' },
+      { number: '14', title: 'Analisis Indeks Spektral Biofisik', focus: 'NDVI, SAVI, NDWI & Estimasi Biomassa Permukaan', status: 'published' },
+      { number: '21', title: 'Prinsip Synthetic Aperture Radar (SAR)', focus: 'Hamburan Balik Radar, Polarimetri & Speckle Filtering', status: 'published' }
     ]
   },
   {
@@ -536,7 +536,7 @@ export const OVERVIEW_STATS = {
   totalImplementedChapters: LEARNING_HUBS.reduce((acc, h) => acc + h.metrics.implementedChapters, 0),
   totalOnlineAccessibleChapters: LEARNING_HUBS.reduce((acc, h) => acc + h.metrics.onlineAccessibleChapters, 0),
   totalVerifiedExamples: 309, // Python CPython suite terverifikasi
-  totalSlideDecks: 308,       // 30 Python core + 40 AI + 40 IoT + 60 MMCV + 115 SP + 23 RS (333 jika 55 Python dihitung)
+  totalSlideDecks: 337,       // 30 Python core + 40 AI + 40 IoT + 60 MMCV + 144 SP + 23 RS (362 jika 55 Python dihitung)
   totalInteractiveLabs: 40,   // 18 MMCV (Bab 01–15) + 2 RS + 15 SR + 5 AI track labs (53 di MMCV playgrounds)
   totalResearchTemplates: 10, // SR (TMPL-01 s.d TMPL-10)
 };

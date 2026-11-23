@@ -111,45 +111,45 @@ const BASELINE_SNAPSHOT = {
   'signal-processing-learning-hub': {
     hubId: 'signal-processing-learning-hub',
     title: 'Signal Processing Learning Hub',
-    deploymentStatus: 'local-only',
+    deploymentStatus: 'deployed',
     websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
     repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
     metrics: {
       plannedChapters: 113,
-      implementedChapters: 28,
-      contentPublishedChapters: 28,
-      onlineAccessibleChapters: 0,
-      slideDecksCount: 115
+      implementedChapters: 35,
+      contentPublishedChapters: 35,
+      onlineAccessibleChapters: 35,
+      slideDecksCount: 144
     },
     plannedChaptersCount: 113,
-    implementedChaptersCount: 28,
-    publishedChaptersCount: 0,
+    implementedChaptersCount: 35,
+    publishedChaptersCount: 35,
     sourceManifest: 'Signal Processing/src/data/curriculum_metadata.json',
-    sourceRevision: 'local-dev-c28',
+    sourceRevision: 'v1.0.0-release',
     lastVerifiedAt: '2026-11-23',
-    verificationNotes: 'Repositori GitHub terdaftar (belum memiliki source code publik / deployment daring); 28 bab terimplementasi di direktori lokal dengan 115 slide deck HTML siap saji.'
+    verificationNotes: 'Platform akademik aktif di GitHub Pages; 35 bab inti daring (C01–C35) lengkap dengan 144 pelajaran dan slide presentasi.'
   },
   'remote-sensing-hub': {
     hubId: 'remote-sensing-hub',
     title: 'Remote Sensing & Geospatial Intelligence Learning Hub',
-    deploymentStatus: 'local-only',
-    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
-    repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
+    deploymentStatus: 'deployed',
+    websiteUrl: 'https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/',
+    repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-Sensing-Geospatial-Intelligence-Learning-Hub',
     metrics: {
       plannedChapters: 28,
-      implementedChapters: 23,
-      contentPublishedChapters: 23,
-      onlineAccessibleChapters: 0,
+      implementedChapters: 28,
+      contentPublishedChapters: 28,
+      onlineAccessibleChapters: 28,
       slideDecksCount: 23,
       interactiveLabsCount: 2
     },
     plannedChaptersCount: 28,
-    implementedChaptersCount: 23,
-    publishedChaptersCount: 0,
+    implementedChaptersCount: 28,
+    publishedChaptersCount: 28,
     sourceManifest: 'Remote Sensing & Geospatial Intelligence/content/curriculum/master-curriculum.json',
-    sourceRevision: 'local-dev-c23',
+    sourceRevision: 'v1.0.0 (commit main)',
     lastVerifiedAt: '2026-11-23',
-    verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 23 bab terstruktur dengan 23 slide deck dan 2 simulator lab interaktif.'
+    verificationNotes: 'Platform akademik aktif di GitHub Pages; 28 bab master kurikulum daring dengan 23 slide deck dan 2 simulator lab interaktif.'
   },
   'scientific-research-hub': {
     hubId: 'scientific-research-hub',
@@ -338,20 +338,20 @@ const adapters = [
         if (slides.length > 0) slidesCount = slides.length;
       }
       return {
-        deploymentStatus: 'local-only',
+        deploymentStatus: 'deployed',
         websiteUrl: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/',
         repositoryUrl: 'https://github.com/aji-nurcahyo/Signal-Processing-Learning-Hub.git',
         metrics: {
           plannedChapters: plannedCount,
           implementedChapters: implementedCount,
           contentPublishedChapters: implementedCount,
-          onlineAccessibleChapters: 0,
+          onlineAccessibleChapters: implementedCount,
           slideDecksCount: slidesCount
         },
         sourceManifest: 'Signal Processing/src/data/curriculum_metadata.json',
-        sourceRevision: 'local-dev-c28',
+        sourceRevision: 'v1.0.0-release',
         lastVerifiedAt: '2026-11-23',
-        verificationNotes: 'Repositori GitHub terdaftar (belum memiliki source code publik / deployment daring); 28 bab terimplementasi di direktori lokal dengan 115 slide deck HTML siap saji.'
+        verificationNotes: 'Platform akademik aktif di GitHub Pages; 35 bab inti daring (Level 1–4, Bab C01–C35) lengkap dengan 144 pelajaran dan slide presentasi.'
       };
     }
   },
@@ -377,21 +377,21 @@ const adapters = [
         slidesCount = dirs.filter(d => fs.existsSync(path.join(chaptersDir, d, 'slides.json'))).length;
       }
       return {
-        deploymentStatus: 'local-only',
-        websiteUrl: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/',
-        repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-sensing-Geospatial-intelligent-Learning-Hub',
+        deploymentStatus: 'deployed',
+        websiteUrl: 'https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/',
+        repositoryUrl: 'https://github.com/aji-nurcahyo/Remote-Sensing-Geospatial-Intelligence-Learning-Hub',
         metrics: {
           plannedChapters: plannedCount,
           implementedChapters: implementedCount,
           contentPublishedChapters: implementedCount,
-          onlineAccessibleChapters: 0,
+          onlineAccessibleChapters: implementedCount,
           slideDecksCount: slidesCount,
           interactiveLabsCount: 2
         },
         sourceManifest: 'Remote Sensing & Geospatial Intelligence/content/curriculum/master-curriculum.json',
-        sourceRevision: 'local-dev-c23',
+        sourceRevision: 'v1.0.0 (commit main)',
         lastVerifiedAt: '2026-11-23',
-        verificationNotes: 'Repositori GitHub terdaftar (belum memiliki deployment daring); 23 bab terstruktur dengan 23 slide deck dan 2 simulator lab interaktif.'
+        verificationNotes: 'Platform akademik aktif di GitHub Pages; 28 bab master kurikulum daring dengan 23 slide deck dan 2 simulator lab interaktif.'
       };
     }
   },

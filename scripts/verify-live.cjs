@@ -7,7 +7,7 @@ const expectedHubs = [
   { name: 'Internet of Things Learning Hub', htmlTitle: 'Internet of Things Learning Hub', url: 'https://aji-nurcahyo.github.io/IoT-Learning-Hub/' },
   { name: 'Multimedia & Computer Vision Learning Hub', htmlTitle: 'Multimedia &amp; Computer Vision Learning Hub', url: 'https://aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub/' },
   { name: 'Signal Processing Learning Hub', htmlTitle: 'Signal Processing Learning Hub', url: 'https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/' },
-  { name: 'Remote Sensing & Geospatial Intelligence Learning Hub', htmlTitle: 'Remote Sensing &amp; Geospatial Intelligence Learning Hub', url: 'https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/' },
+  { name: 'Remote Sensing & Geospatial Intelligence Learning Hub', htmlTitle: 'Remote Sensing &amp; Geospatial Intelligence Learning Hub', url: 'https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/' },
   { name: 'Scientific Research & Experimental Methods Learning Hub', htmlTitle: 'Scientific Research &amp; Experimental Methods Learning Hub', url: 'https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/' }
 ];
 
@@ -23,7 +23,8 @@ expectedHubs.forEach(h => {
 });
 
 const segeraHadirCount = (html.match(/Segera Hadir/g) || []).length;
-console.log(`\n"Segera Hadir" badges count: ${segeraHadirCount}`);
+console.log(`\n"Segera Hadir" badges count (must be 0): ${segeraHadirCount}`);
+if (segeraHadirCount > 0) allPassed = false;
 
 const bukaButtonCount = (html.match(/Buka Learning Hub/g) || []).length;
 console.log(`"Buka Learning Hub" text count: ${bukaButtonCount}`);

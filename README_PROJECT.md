@@ -1,15 +1,15 @@
 # Engineering Learning Ecosystem — Project Continuation Reference
 **Portal Utama Ekosistem Pembelajaran Terbuka — Institut Teknologi Sumatera (ITERA)**  
 *Dokumen Rujukan Utama untuk Sesi AI & Pengembang*  
-*Terakhir Diperbarui: 23 November 2026 (Fase RELEASE-02 — RELEASED & VERIFIED v1.0.1)*
+*Terakhir Diperbarui: 23 November 2026 (Fase ELE-HOTFIX — RELEASED & VERIFIED v1.0.2)*
 
 ---
 
-## 📌 1. Identitas & Status Rilis Produksi (v1.0.1)
+## 📌 1. Identitas & Status Rilis Produksi (v1.0.2)
 
 - **Nama Publik Portal:** **Engineering Learning Ecosystem**
-- **Versi Rilis:** `v1.0.1`
-- **Status Rilis:** **RELEASED & VERIFIED** (Publikasi GitHub Pages Aktif & Terverifikasi Nyata)
+- **Versi Rilis:** `v1.0.2`
+- **Status Rilis:** **RELEASED & VERIFIED** (Penyelarasan Penuh 7 Learning Hub Daring: 7 Deployed / 0 Local-Only)
 - **Nama Folder Lokal:** `Learning-Hub-Dashboard` (dipertahankan di `D:\Workstation\Repo My Corses\Learning-Hub-Dashboard`)
 - **Institusi Resmi:** Program Studi S1 Teknik Telekomunikasi, Institut Teknologi Sumatera (ITERA)
 - **Payung Riset:** Intelligent Sensing, Vision and Wireless Systems (ISVWS) 2026–2040
@@ -17,25 +17,15 @@
 - **Inisiator & Pengembang:** Aji Pamungkas Tri Nurcahyo
 - **Repositori Produksi GitHub:** [`aji-nurcahyo/Engineering-Learning-Ecosystem`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem) (`main` branch)
 - **URL GitHub Pages Publik:** [`https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/`](https://aji-nurcahyo.github.io/Engineering-Learning-Ecosystem/)
-- **Git Commit SHA Rilis v1.0.1:** `34eb8af821aa6ac470f35ddbbce376278d39c016` (`release: Engineering Learning Ecosystem v1.0.1 - synchronize public hub links & update Scientific Research deployment`)
-- **Status GitHub Actions Workflow:**
-  - **Workflow Name:** `Deploy Engineering Learning Ecosystem to GitHub Pages`
-  - **Workflow Run ID:** `45149652495`
-  - **Run URL:** [`https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45149652495`](https://github.com/aji-nurcahyo/Engineering-Learning-Ecosystem/actions/runs/45149652495)
-  - **Job 1 (Build & Verify Dashboard):** ID `137607541826` — **SUCCESS**
-  - **Job 2 (Deploy to GitHub Pages):** ID `137607673171` — **SUCCESS**
-- **Hasil Verifikasi Produksi Daring Nyata (Headless Chrome DOM Audit):**
-  - Halaman utama merespons `HTTP 200 OK` (ETag: `"6b040aec-a81"`).
-  - Bundel produksi JS aktif: `index-V8RZcF7g.js` (`HTTP 200 OK`).
-  - Bundel produksi CSS aktif: `index-p3XXlGwj.css` (`HTTP 200 OK`).
-  - Seluruh 7 kartu Learning Hub menyajikan tombol aksi "Buka Learning Hub" aktif menuju alamat GitHub Pages masing-masing.
-  - Scientific Research & Experimental Methods terverifikasi aktif daring (`deploymentStatus: 'deployed'`) dengan 51 bab materi online.
-  - Signal Processing dan Remote Sensing terverifikasi aman (`deploymentStatus: 'local-only'`, 0 online chapters) dengan label penjelas *Segera Hadir*.
-  - Bebas dari kesalahan konsol kritis (*0 console errors*).
+- **Target Pembaharuan v1.0.2:**
+  - **Signal Processing Learning Hub:** Resmi diverifikasi dan diaktifkan status daring (`deploymentStatus: 'deployed'`) di [`https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/`](https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/) dengan 35 bab kurikulum inti daring (C01–C35, 144 pelajaran & slide deck).
+  - **Remote Sensing & Geospatial Intelligence Learning Hub:** Diperbarui ke URL publik resmi terbaru [`https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/`](https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/) dan diaktifkan status daring (`deploymentStatus: 'deployed'`) dengan 28 bab master kurikulum daring.
+  - **Target Ekosistem Tercapai Penuh:** 7 dari 7 Learning Hubs berstatus publik daring aktif (*7 deployed, 0 local-only*). Label "Segera Hadir" dihapus sepenuhnya.
+  - **Local Preview Enhancement:** Konfigurasi Vite preview (`vite.config.ts`) diperkaya dengan auto-detection base path dan preview redirect middleware, sehingga `npm run preview` berjalan mulus baik di root `/` maupun di base subpath `/Engineering-Learning-Ecosystem/`.
 
 ---
 
-## 🗺️ 2. Pemetaan Aktual Ekosistem 7 Learning Hub (Terekonsiliasi Final v1.0.1)
+## 🗺️ 2. Pemetaan Aktual Ekosistem 7 Learning Hub (Terekonsiliasi Final v1.0.2)
 
 | Nama Learning Hub | Klaster Keilmuan | Kategori | Folder Lokal | Status Deployment | Bab Rencana | Bab Impl. | Bab Daring | URL Website Publik & Repositori |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
@@ -44,9 +34,9 @@
 | **IoT Learning Hub** | Sensing, Signals & Embedded | IoT | `Internet Of Things` | **Tersedia Daring** | 40 | 40 | 40 | [`aji-nurcahyo.github.io/IoT-Learning-Hub`](https://aji-nurcahyo.github.io/IoT-Learning-Hub/)<br>40 Slides, Fondasi Daring (Hardware Untested) |
 | **Multimedia & CV Hub** | Vision & Geospatial | Multimedia & CV | `Multimedia & Computer Vision` | **Tersedia Daring** | 60 | 60 | 60 | [`aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub`](https://aji-nurcahyo.github.io/Multimedia-Computer-Vision-Learning-Hub/)<br>60 Slides, 18 Client Labs (53 Playgrounds) |
 | **Scientific Research Hub** | Scientific Research | Research Methodology | `Scientific Research & Experimental Methods`| **Tersedia Daring** | 51 | 51 | 51 | [`aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub`](https://aji-nurcahyo.github.io/Scientific-Research-Experimental-Methods-Learning-Hub/)<br>51 Bab Daring, 15 Lab Komputasi, 10 Templat Riset |
-| **Signal Processing Hub** | Sensing, Signals & Embedded | Signal Processing | `Signal Processing` | **Pengembangan Lokal** (Segera Hadir) | 113 | 28 | 0 | [`aji-nurcahyo.github.io/Signal-Processing-Learning-Hub`](https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/)<br>115 Slide Deck HTML (Repositori GitHub Terdaftar) |
-| **Remote Sensing Hub** | Vision & Geospatial | Remote Sensing | `Remote Sensing & Geospatial Intelligence` | **Pengembangan Lokal** (Segera Hadir) | 28 | 23 | 0 | [`aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub`](https://aji-nurcahyo.github.io/Remote-sensing-Geospatial-intelligent-Learning-Hub/)<br>23 Slide Decks, 2 Simulator Lab Interaktif |
-| **TOTAL EKOSISTEM** | **4 Klaster** | **7 Domain** | — | **5 Daring / 2 Lokal** | **387** | **297** | **221** | **308 Slide Decks, 40 Lab, 309 CPython, 10 Templat** |
+| **Signal Processing Hub** | Sensing, Signals & Embedded | Signal Processing | `Signal Processing` | **Tersedia Daring** | 113 | 35 | 35 | [`aji-nurcahyo.github.io/Signal-Processing-Learning-Hub`](https://aji-nurcahyo.github.io/Signal-Processing-Learning-Hub/)<br>35 Bab Core Daring (144 Pelajaran & Slide) |
+| **Remote Sensing Hub** | Vision & Geospatial | Remote Sensing | `Remote Sensing & Geospatial Intelligence` | **Tersedia Daring** | 28 | 28 | 28 | [`aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub`](https://aji-nurcahyo.github.io/Remote-Sensing-Geospatial-Intelligence-Learning-Hub/)<br>28 Bab Master Kurikulum Daring, 23 Slide Decks |
+| **TOTAL EKOSISTEM** | **4 Klaster** | **7 Domain** | — | **7 Daring / 0 Lokal** | **387** | **309** | **284** | **337 Slide Decks, 40 Lab, 309 CPython, 10 Templat** |
 
 > [!IMPORTANT]
 > **PERINGATAN PROTOKOL READ-ONLY:**  
@@ -107,14 +97,15 @@ npm run preview
 
 ---
 
-## ⚠️ 6. Batasan Diketahui (Known Limitations v1.0.0)
+## ⚠️ 6. Batasan Diketahui (Known Limitations v1.0.2)
 
 1. **Pengujian Fisik Perangkat Keras IoT:**
    - 40 Bab Internet of Things Hub telah ter-deploy di GitHub Pages, namun pengujian hardware fisik masih berstatus `untested hardware`.
-2. **Repositori Berstatus Pengembangan Lokal:**
-   - `Signal Processing Learning Hub`, `Remote Sensing & Geospatial Intelligence Learning Hub`, dan `Scientific Research & Experimental Methods Learning Hub` telah memiliki repositori GitHub resmi terdaftar, namun belum memiliki hosting web publik yang aktif (`deploymentStatus: 'local-only'`, `onlineAccessibleChapters: 0`). Tombol aksi portal secara aman menyajikan label *Pengembangan Lokal* tanpa tautan kosong.
+2. **Ketersediaan Daring Seluruh 7 Hub:**
+   - Seluruh 7 Learning Hub saat ini telah terverifikasi memiliki website publik aktif di GitHub Pages (`7 deployed, 0 local-only`).
+   - Signal Processing Learning Hub aktif dengan 35 bab inti kurikulum terstruktur (Level 1–4, C01–C35). Bab spesialisasi dan riset lanjut (C36–C113) berada dalam roadmap kurikulum beku (frozen canonical baseline).
 3. **Kompatibilitas Lingkungan CI:**
-   - Skrip `scripts/sync-manifests.mjs` secara deterministik menggunakan `BASELINE_SNAPSHOT` bila dijalankan pada GitHub Actions runner tanpa keberadaan folder repositori lokal tetangga.
+   - Skrip `scripts/sync-manifests.mjs` secara deterministik menggunakan `BASELINE_SNAPSHOT` bila dijalankan pada GitHub Actions runner tanpa keberadaan folder repositori lokal tetangga. Snapshot baseline telah diperbarui menyelaraskan status ketujuh hub daring.
 
 ---
 
